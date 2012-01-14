@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% if content_for? :title -%>
+      <title>Paymax | <%= content_for :title %></title>
+    <% else -%>
+      <title>Paymax</title>
+    <% end -%>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="container">
+      <%= render 'shared/header' %>
+      <%= render 'shared/menu' %>
+      <div id="content">
+        <% if flash[:notice] -%>
+          <p class="notice" id="notice">
+            <%= flash[:notice] %>
+          </p>
+        <% end -%>
+        <% if flash[:alert] -%>
+          <p class="error" id="alert">
+            <%= flash[:alert] %>
+          </p>
+        <% end -%>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
