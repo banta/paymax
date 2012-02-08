@@ -9,7 +9,7 @@
 	Goto config/database.yml and change it corresponding to your database credencials
 	
 	
-	run the following commands:
+	run the following commands
 	
 	$ bundle install
 	$ rake db:create

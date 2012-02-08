@@ -35,7 +35,7 @@ Paymax::Application.configure do
     :port                 => 587,
     :domain               => 'gmail.com',
     :user_name            => #your gmail user name
-    :password             => #your gmail user password
+    :password             => #'Gkaribu82E',
     :authentication       => :plain
   }
 

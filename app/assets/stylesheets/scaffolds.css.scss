@@ -1,0 +1,65 @@
+html, body { height: 100%; }
+body { /*color: #8FBFFF;*/ padding: 0px; margin: 0px; background-color: #B3ACE3; background-image: url(image_path('bg-body.png')); background-repeat: repeat-y; background-position: top center; }
+body, input { font-family: Arial; font-size: 13pt; }
+input { padding: 3px; border: 1px solid rgb(210,210,210); border-radius: 4px 4px 4px 4px; box-shadow: 0 1px 0 #FFFFFF, 0 1px 1px rgba(0, 0, 0, 0.1) }
+input[type='button'], input[type='submit'] { background-color: #EEE; padding: 5px; }
+textarea { border: 1px solid rgb(210,210,210); width: 700px; padding: 10px; font-family: Arial; }
+ul { margin: 0; padding-top: 15px; }
+img { border: 0; }
+p { margin: 0; padding: 10px 15px 10px 15px; }
+table { margin-left: 15px; }
+h1 { margin: 0; padding: 25px 15px 10px 15px; font-size: 20pt; text-transform: uppercase;  }
+h2 { font-size: 14pt; }
+a { color: #BA303A; text-decoration: none; }
+a.button { background-color:green; cursor:pointer; color:#ffffff; padding:5 15 5 15px; -moz-border-radius: 3px;	border-radius: 3px; }
+a:hover { text-decoration: underline; }
+table { border-collapse: collapse; }
+th { text-align: left; }
+td img { padding: 0; }
+hr { border: 0; width: 800px; margin: 15px 0 10px 15px; color: #CCC; background-color: #CCC; height: 2px; }
+
+#container { width: 75%; margin: 0 auto; background-color: #FFF; padding: 20px 40px; border: solid 1px black; margin-top: 20px; border-radius: 7px 7px 7px 7px; box-shadow: 0 1px 0 #FFFFFF, 0 1px 1px rgba(0, 0, 0, 0.1) }
+
+#header { background-color: #29264D; color: #FFF; /*border-bottom: 2px solid rgb(8,58,127);*/ }
+#menu { background-color: #29264D; border-bottom: 4px solid #BA303A; }
+#content { position: relative; width: 850px; margin-left: auto; margin-right: auto; padding-bottom: 60px; }
+#content p { padding: 0 15px 0 15px; margin-bottom: 10px; }
+#content p.error, #content p.notice { padding: 10px 15px 10px 50px; margin: 0 0 15px 15px; }
+#content ul { padding-top: 0; }
+#footer { position: absolute; bottom: 0; width: 100%; background-color: rgb(0,24,49); color: #FFF; border-top: 4px solid #BA303A; }
+#alert_no_fade { position: relative; top: 15px; }
+
+.menu { padding: 10px 15px 7px 15px; color: #FFF; }
+.menu a, .footer a { color: #FFF; }
+.footer { text-align: center; }
+.footer a { text-decoration: underline; }
+
+.text_input { width: 280px; }
+.user_welcome { float: right; }
+.user_welcome a { color: #FFF; text-decoration: underline; }
+.user_groups { margin-right: 200px; display: block; }
+.user_name { min-width: 180px; }
+
+.translation .missing { color: #F0F; }
+
+#flash_notice, #flash_error, #flash_alert { clear: both; padding: 5px 8px; margin: 10px 0; width: 400px; }
+#flash_notice { background-color: #CFC; border: solid 1px #6C6; }
+#flash_error, #flash_alert { background-color: #FCC; border: solid 1px #C66; }
+
+
+span.field_with_errors input, span.field_with_errors textarea { background-color: #FDD; }
+#errorExplanation { width: 500px; border: 2px solid #c00; padding: 7px 7px 15px 7px; margin: 10px 0 10px 15px; background-color: #f0f0f0; }
+#errorExplanation p { padding-left: 8px; }
+#errorExplanation h2 { color: #DD4B39; text-align: left; font-weight: bold; padding: 5px 5px 5px 15px; margin: -7px; margin-bottom: 7px; background-color: #c00; color: #fff; }
+#errorExplanation ul li { color: #DD4B39; list-style: square; }
+
+
+.authentications { margin-bottom: 30px; }
+.authentication { width: 130px; float: left; background-color: #EEE; border: solid 1px #999; padding: 5px 10px; -moz-border-radius: 8px; -webkit-border-radius: 8px; position: relative; margin-right: 10px; }
+.authentication .remove { text-decoration: none; position: absolute; top: 3px; right: 3px; color: #333; padding: 2px 4px; font-size: 10px; }
+.authentication .remove:hover { color: #CCC; background-color: #777; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+.authentication img { float: left; margin-right: 10px; }
+.authentication .provider { font-weight: bold;}
+.authentication .uid { color: #666; font-size: 11px; }
+.auth_provider img { display: block; }
+.auth_provider { float: left; text-decoration: none; margin-right: 20px; text-align: center; margin-bottom: 10px; }
